@@ -209,3 +209,253 @@ footer img{
   "affairs tfc"
   "garden hurricane"
 }
+
+#frank{
+  grid-area: frank;
+
+}
+
+#grendel{
+  grid-area:grendel;
+}
+
+#beowulf{
+  grid-area:beowulf;
+}
+
+#wind{
+  grid-area:wind;
+}
+
+#child{
+  grid-area:child;
+}
+
+#spook{
+  grid-area:spook;
+}
+
+#fowl{
+  grid-area:fowl;
+}
+
+#warrior{
+  grid-area:warrior;
+}
+
+#japan{
+  grid-area:japan;
+}
+
+#space{
+  grid-area:space;
+}
+
+#watch{
+  grid-area:watch;
+}
+
+#monstress{
+  grid-area:monstress;
+}
+
+#connor{
+  grid-area:connor;
+}
+
+#lottery{
+  grid-area:lottery;
+}
+
+#titleone{
+  grid-area:titleone;
+}
+
+#titletwo{
+  grid-area:titletwo;
+}
+
+#titlethree{
+  grid-area:titlethree;
+}
+
+#titlefour{
+  grid-area:titlefour;
+}
+
+#frankpic{
+  grid-area:frankpic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#frankpic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+#grendelpic{
+  grid-area:grendelpic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#grendelpic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+#beowulfpic{
+  grid-area:beowulfpic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#beowulfpic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+#windpic{
+  grid-area:windpic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#windpic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+#childpic{
+  grid-area:childpic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#childpic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+#spookpic{
+  grid-area:spookpic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#spookpic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+#fowlpic{
+  grid-area:fowlpic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#fowlpic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+#warriorpic{
+  grid-area:warriorpic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#warriorpic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+#japanpic{
+  grid-area:japanpic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#japanpic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+#spacepic{
+  grid-area:spacepic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#spacepic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+#watchpic{
+  grid-area:watchpic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#watchpic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+#monsterpic{
+  grid-area:monsterpic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#monsterpic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+#connorpic{
+  grid-area:connorpic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#connorpic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+#lotterypic{
+  grid-area:lotterypic;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#lotterypic:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+.gridBook{
+  display:grid;
+  grid-template-columns: repeat(4,auto);
+  grid-template-rows: repeat(11,auto);
+  grid-gap: 20px;
+  grid-template-areas:
+  "titleone . . ."
+  "frankpic frank grendelpic grendel"
+  "beowulfpic beowulf  windpic wind"
+  "titletwo . . ."
+  "childpic child spookpic spook"
+  "fowlpic fowl warriorpic warrior"
+  "titlethree . . ."
+  "japanpic japan spacepic space"
+  "watchpic watch monsterpic monstress"
+  "titlefour . . ."
+  "connorpic connor lotterypic lottery"
+}
+
+.gridBook p{
+  padding-top: 10px;
+}
