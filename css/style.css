@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Questrial');
+
+
 
 html {
   font-size: 16px;
@@ -8,98 +9,56 @@ body {
   color: #222;
 }
 
-a {
-  color: rgb(20,61,142);
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-a:hover{
-  color: rgb(0,230,230);
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+p {
+  padding-bottom:10px;
+  padding-left: 10px;
+  padding-right:10px;
+}
+
+a {
+  color: rgb(63,57,108);
 }
 
 a:visited{
-  color: rgb(88,40,130);
+  color: rgb(44,45,86);
 }
 
-ul{
-  padding-left: 15px;
-  /* margin: 15px 0px; */
-}
-
-#header {
-  grid-area: header;
-  padding: 10px;
-  border-bottom: 1px solid #222;
-  font-family:"Questrial", sans-serif;
-}
-
-
-#photo {
-  grid-area: photo;
-  border: 1px solid #222;
-}
-
-
-.ed, .exp, .act, #footer{
-  font-family: "Fira Sans Condensed", sans-serif;
-}
-
-
- .ed {
-  grid-area: ed;
-  padding: 10px;
-  line-height: 1.5;
-}
-
-  .exp {
-  grid-area: exp;
-  padding: 10px;
-  border-bottom: 1px solid #222;
-  line-height: 1.5;
-}
-
-
-   .act {
-  grid-area: act;
-  padding: 15px 10px 10px;
-  line-height: 1.5;
-}
-
-.act > article {
-  padding: 10px 0px;
-}
-
-div .act {
-  max-width: 252px;
-}
-
-
-#contacts{
-  padding: 25px 0px;
-  line-height:1.5;
-}
-
-#footer {
-  grid-area: foot;
-  padding: 10px;
-  border-top: 1px solid #222;
+a:hover{
+  color: rgb(94,43,108);
 }
 
 h1, h2, h3, h4, p{
   margin:0;
 }
 
-
-h1 {
-  font-size: 57px;
+h1, h2, h3, h4, nav {
+  padding-top:10px;
+  padding-left: 10px;
+  padding-bottom:0;
 }
 
-
-#contacts img{
-  padding-right: 10px;
-  padding-top: 2px;
+ul {
+  margin: 10px 0px;
 }
 
+footer p {
+  padding: 0px 10px;
+  display: inline-block;
+}
 
+footer img{
+  padding-right:10px;
+}
 
 .container {
   max-width: 960px;
@@ -108,13 +67,145 @@ h1 {
   background-color: #eee;
 }
 
-.grid{
-  display: grid;
+#intro{
+  grid-area: intro;
+}
+
+#photo {
+  grid-area: photo;
+  border: 1px solid #222;
+}
+
+.gridIndex{
+  display:grid;
   grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
   grid-gap: 20px;
   grid-template-areas:
-  "header header"
-  "act    exp"
-  "act    ed"
-  "foot  foot";
+  "intro photo"
+}
+
+#thesis{
+  grid-area: thesis;
+  line-height: 1.5;
+}
+
+#novel{
+  grid-area: novel;
+  line-height: 1.5;
+}
+
+#art{
+  grid-area:art;
+  line-height: 1.5;
+}
+
+#writing{
+  grid-area: writing;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#writing:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+
+#book {
+  grid-area: book;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#book:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+
+
+#supply {
+  grid-area: supply;
+  border: 1px solid #ccc;
+  filter: grayscale(1);
+  transition: filter 1s ease-in;
+}
+
+#supply:hover {
+  filter: grayscale(0);
+  transition: filter 1s ease-in;
+}
+
+.gridProjects{
+  display:grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap:20px;
+  grid-template-areas:
+  "writing book supply"
+  "thesis novel art"
+}
+
+
+#exp{
+  grid-area:exp;
+}
+#garden > p,h4 {
+  padding-top:0;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left:10px;
+}
+
+#hurricane > p, h4{
+  padding-top:0;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left:10px;
+}
+
+#affairs > p, h4{
+  padding-top:0;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left:10px;
+}
+
+#tfc > p, h4{
+  padding-top:0;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-left:10px;
+}
+
+#hurricane{
+  grid-area:hurricane;
+  line-height: 1.5;
+}
+
+#garden{
+  grid-area:garden;
+  line-height: 1.5;
+}
+
+#affairs{
+  grid-area:affairs;
+  line-height: 1.5;
+}
+
+#tfc{
+  grid-area:tfc;
+  line-height: 1.5;
+}
+
+.gridResume{
+  display:grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-gap:20px;
+  grid-template-areas:
+  "exp exp"
+  "affairs tfc"
+  "garden hurricane"
 }
