@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Questrial');
 
 
-h1, h2, h3, h4, h5, nav{
+h1, h2, h3, h4, h5{
 font-family:"Questrial", sans-serif;
 }
 
-p, ul{
+p, ul, li, nav{
 font-family:"Fira Sans", sans-serif;
 }
+
+
 html {
   font-size: 16px;
 }
@@ -144,15 +146,26 @@ footer img{
   transition: filter 1s ease-in;
 }
 
+#thesistitle{
+  grid-area: thesistitle;
+}
+#noveltitle{
+  grid-area:noveltitle;
+}
+#artstitle{
+  grid-area:artstitle;
+}
 .gridProjects{
   display:grid;
   grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
   grid-gap:20px;
   grid-template-areas:
   "writing book supply"
+  "thesistitle noveltitle artstitle"
   "thesis novel art"
 }
+
 
 
 #exp{
@@ -219,59 +232,73 @@ footer img{
 
 #frank{
   grid-area: frank;
+  line-height: 1.5;
 
 }
 
 #grendel{
   grid-area:grendel;
+  line-height: 1.5;
 }
 
 #beowulf{
   grid-area:beowulf;
+  line-height: 1.5;
 }
 
 #wind{
   grid-area:wind;
+  line-height: 1.5;
 }
 
 #child{
   grid-area:child;
+  line-height: 1.5;
 }
 
 #spook{
   grid-area:spook;
+  line-height: 1.5;
 }
 
 #fowl{
   grid-area:fowl;
+  line-height: 1.5;
 }
 
 #warrior{
   grid-area:warrior;
+  line-height: 1.5;
 }
 
 #japan{
   grid-area:japan;
+  line-height: 1.5;
 }
 
 #space{
   grid-area:space;
+  line-height: 1.5;
 }
 
 #watch{
   grid-area:watch;
+  line-height: 1.5;
 }
 
 #monstress{
   grid-area:monstress;
+  line-height: 1.5;
 }
 
 #connor{
   grid-area:connor;
+  line-height: 1.5;
 }
 
 #lottery{
   grid-area:lottery;
+  line-height: 1.5;
 }
 
 #titleone{
@@ -465,4 +492,9 @@ footer img{
 
 .gridBook p{
   padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.gridBook h3{
+  padding-top: 0;
 }
