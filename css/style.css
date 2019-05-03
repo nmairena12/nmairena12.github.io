@@ -87,7 +87,7 @@ footer{
 
 #photo {
   grid-area: photo;
-  border: 1px solid #222;
+  border: 1px solid #ccc;
 }
 #introtitle{
   grid-area:introtitle;
@@ -175,6 +175,9 @@ footer{
   "thesis novel art"
 }
 
+.gridProjects img{
+  margin-top: 10px;
+}
 
 
 #exp{
@@ -487,7 +490,8 @@ footer{
   display:grid;
   grid-template-columns: repeat(4,auto);
   grid-template-rows: repeat(11,auto);
-  grid-gap: 20px;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
   grid-template-areas:
   "titleone . . ."
   "frankpic frank grendelpic grendel"
