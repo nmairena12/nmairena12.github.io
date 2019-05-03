@@ -238,6 +238,9 @@ footer{
   "affairs tfc"
   "garden hurricane"
 }
+.gridResume h3{
+  padding-top:0;
+}
 
 #frank{
   grid-area: frank;
