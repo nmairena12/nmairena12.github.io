@@ -67,6 +67,11 @@ footer p {
 
 footer img{
   padding-right:10px;
+  vertical-align: middle;
+}
+
+footer{
+  margin-top: 10px;
 }
 
 .container {
@@ -84,6 +89,9 @@ footer img{
   grid-area: photo;
   border: 1px solid #222;
 }
+#introtitle{
+  grid-area:introtitle;
+}
 
 .gridIndex{
   display:grid;
@@ -91,6 +99,7 @@ footer img{
   grid-template-rows: repeat(1, auto);
   grid-gap: 20px;
   grid-template-areas:
+  "introtitle ."
   "intro photo"
 }
 
